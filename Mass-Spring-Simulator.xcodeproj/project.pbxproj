@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D31B2C0292038AD00E63526 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D31B2BF292038AD00E63526 /* main.cpp */; };
+		6D31B2D329204B6300E63526 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D31B2D229204B6300E63526 /* main.cpp */; };
+		6D31B2D829204BF700E63526 /* mass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D31B2D429204BF700E63526 /* mass.cpp */; };
+		6D31B2D929204BF700E63526 /* spring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D31B2D729204BF700E63526 /* spring.cpp */; };
+		6D31B2DC29204CF600E63526 /* simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D31B2DA29204CF600E63526 /* simulator.cpp */; };
+		6D31B2DF2920AB7B00E63526 /* ga_fixed_morphology.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D31B2DD2920AB7B00E63526 /* ga_fixed_morphology.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +28,15 @@
 
 /* Begin PBXFileReference section */
 		6D31B2BC292038AD00E63526 /* Mass-Spring-Simulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mass-Spring-Simulator"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D31B2BF292038AD00E63526 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6D31B2D229204B6300E63526 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6D31B2D429204BF700E63526 /* mass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mass.cpp; sourceTree = "<group>"; };
+		6D31B2D529204BF700E63526 /* mass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mass.hpp; sourceTree = "<group>"; };
+		6D31B2D629204BF700E63526 /* spring.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = spring.hpp; sourceTree = "<group>"; };
+		6D31B2D729204BF700E63526 /* spring.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = spring.cpp; sourceTree = "<group>"; };
+		6D31B2DA29204CF600E63526 /* simulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulator.cpp; sourceTree = "<group>"; };
+		6D31B2DB29204CF600E63526 /* simulator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = simulator.hpp; sourceTree = "<group>"; };
+		6D31B2DD2920AB7B00E63526 /* ga_fixed_morphology.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ga_fixed_morphology.cpp; sourceTree = "<group>"; };
+		6D31B2DE2920AB7B00E63526 /* ga_fixed_morphology.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ga_fixed_morphology.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,33 @@
 		6D31B2BE292038AD00E63526 /* Mass-Spring-Simulator */ = {
 			isa = PBXGroup;
 			children = (
-				6D31B2BF292038AD00E63526 /* main.cpp */,
+				6D31B2D229204B6300E63526 /* main.cpp */,
+				6D31B2E22920ACB800E63526 /* include */,
+				6D31B2E12920AC1600E63526 /* src */,
 			);
 			path = "Mass-Spring-Simulator";
+			sourceTree = "<group>";
+		};
+		6D31B2E12920AC1600E63526 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6D31B2DD2920AB7B00E63526 /* ga_fixed_morphology.cpp */,
+				6D31B2D429204BF700E63526 /* mass.cpp */,
+				6D31B2DA29204CF600E63526 /* simulator.cpp */,
+				6D31B2D729204BF700E63526 /* spring.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		6D31B2E22920ACB800E63526 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6D31B2DE2920AB7B00E63526 /* ga_fixed_morphology.hpp */,
+				6D31B2D529204BF700E63526 /* mass.hpp */,
+				6D31B2DB29204CF600E63526 /* simulator.hpp */,
+				6D31B2D629204BF700E63526 /* spring.hpp */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D31B2C0292038AD00E63526 /* main.cpp in Sources */,
+				6D31B2D929204BF700E63526 /* spring.cpp in Sources */,
+				6D31B2DF2920AB7B00E63526 /* ga_fixed_morphology.cpp in Sources */,
+				6D31B2D329204B6300E63526 /* main.cpp in Sources */,
+				6D31B2DC29204CF600E63526 /* simulator.cpp in Sources */,
+				6D31B2D829204BF700E63526 /* mass.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
